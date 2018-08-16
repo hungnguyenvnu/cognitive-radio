@@ -1,35 +1,28 @@
 Content
 ---
 
-The src repository contains source code of mobile robot with Extended Kalman Filter 
-in  VLC system. The repository includes:
+The cognitive-radio repository contains the simulation for local spectrum sensing and cooperative spectrum sensing in various fading environment. The repository includes:
 
  - README.text: this file.
+  
+ - The "src" directory contains the following sub-directories:
  
- - CallParameters.m: Declare the global parameters
- 
- - InputParameters.m: Set value for global parameters declared in CallParameters file
- 
- - computeEstAngle.m: Compute angle when robot is under the kth LED
- 
- - computeIrradianceAngle.m: Compute the distance from LED to the ith PD
- 
- - computeLocation.m: Find the position of robot in the cover area of the kth LED
- 
- - computeNoise.m: Noise at PD
- 
- - computePowerLeft.m: Compute power when robot is on the left of LED 
- 
- - computePowerRight.m: Compute power when robot is on the right of LED
- 
- - computeWeight.m: Estimate angle based on method "Truncated-Weighting"
- 
- - createPhotodiodeArray.m: Array of PD on robot
- 
- - ExtendKalmanFilter.m: Simulation for EKF
- 
- - ImplementEKF.m: Implement EKF
- 
- - Start.m: To run simulation program
- 
------------------------------  
+ 	- Local Spectrum Sensing: contains simulation over fading environment.
+	
+	    - AWGN: Add white Gaussian noise
+		
+		- Rayleigh_Atapattu: Simulation with Atapattu method in Rayleigh fading
+		
+		- Suzuki: 
+		
+ 	    - Suzuki_Apattu:
+		
+		- Suzuki_ChangeNp:
+		
+		- Suzuki_Rayleigh: 
+		
+ 	- Cooperative Spectrum Sensing: contains simulation for cooperative spectrum sensing in Rayleigh fading and composite fading: Suzuki fading
+	
+	   - Rayleigh fading:
+	   
+	   - Suzuki:
